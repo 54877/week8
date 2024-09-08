@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 
+1. + 只抓取下一個
+2. ~ 標籤後全部 必須在後方 才算數
+3. has 指定同層或父層更改樣式/做動
+4._:nth-child() 前面必須有空格 不管標籤同層全算在內 odd 基數 even偶數 n代數
+5.指定的標籤_:nth-of-type()  指定標籤同層內才算
+ -->
+<style>
+/*修改text-2 條件是.text子元素要有h1+a*/
+    
+
+ body:has(>.text>a)>.text-3:nth-child(3)>p{
+    color: blue;
+    font-size: 100px;
+ }
+
+</style>
+<body>
+
+    <div class="text">
+        <h1>123</h1>
+        <a href="">幹你娘</a>
+    </div>
+    <h2>123456</h2>
+    <div class="text-3">
+        <h3 class="text-2">321</h3>
+        <p>123456789</p>
+    </div>
+</body>
+</html>
