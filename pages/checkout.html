@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning-線上課程網站</title>
+</head>
+
+<body>
+
+
+    <main class=" position-fixed top-0 start-50 translate-middle-x w-100 z-top bg-white">
+        <%- include('./layout/nav-login'); -%>
+    </main>
+    <main class="container">
+        <article  class="d-flex align-items-center justify-content-center mt-lg-12 pt-lg-12 mt-10 pt-4 pb-3 mb-lg-4 mb-3">
+            <p class="mb-0 circl-3 text-white text-center fs-6 fw-medium me-2">1</p>
+            <p class="mb-0 text-neutral-80 fs-6 me-3">確認訂單</p>
+            <div class="ps-6 border-top border-neutral-60 me-3"></div>
+            <p class="mb-0 circl-4 text-white text-center fs-6 fw-medium me-2 d-lg-none">2</p>
+            <p class="mb-0 circl-4 text-white bg-blue-100 text-center fs-6 fw-medium me-2 d-none d-lg-block">2</p>
+            <p class="mb-0 text-neutral-80 fs-6 me-3 d-none d-lg-block">訂單資訊</p>
+            <div class="ps-6 border-top border-neutral-60 me-3"></div>
+            <p class="mb-0 circl-4 text-white text-center fs-6 fw-medium me-2">3</p>
+            <p class="mb-0 text-neutral-80 fs-6 me-3 d-none d-lg-block">訂單完成</p>
+        </article>
+
+        <article class="row">
+            <div class="col-lg-8 px-0 px-lg-8">
+                <div class="shadow mb-3 rounded-lg-4">
+                    <div class="d-flex align-items-center py-3 ps-8 border-bottom">
+                        <h2 class="fs-6 fs-lg-4 fw-semibold text-neutral-100 mb-0 me-3">商品明細</h2>
+                        <p class="fs-8 text-neutral-100 mb-0 ">共 2 項課程</p>
+                    </div>
+                    <div class="px-8 ">
+                        <div class="d-flex align-items-center py-9 border-bottom">
+                            <div class="d-flex w-65 align-items-center  text-start">
+                                <p class="text-white bg-blue-100 px-7 fs-8 mb-0 py-26 me-8">1</p>
+                                <p class="fs-6 text-neutral-80 mb-0">使用 HTML、CSS 開發一個網站</p>
+                            </div>
+                            <p class="text-neutral-100  fs-6 fw-semibold mx-8 mb-0 flex-grow-1 text-end">NT$ 1,200</p>
+                        </div>
+                    </div>
+
+                    <div class="px-8">
+                        <div class="d-flex align-items-center justify-content-lg-start py-9">
+                            <div class="d-flex w-65 align-items-center text-start">
+                                <p class="text-white bg-blue-100 px-2 fs-8 mb-0 py-26 me-8">2</p>
+                                <p class="fs-6 text-neutral-80 mb-0">一變應萬變：RWD 響應式網頁設計</p>
+                            </div>
+                            <p class="text-neutral-100  fs-6 fw-semibold mx-8 mb-0 flex-grow-1 text-end">NT$ 1,200</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow mb-3 rounded-lg-4">
+                    <div class="border-bottom">
+                        <p class="fs-6 text-neutral-100 fw-semibold py-3 ps-8 mb-0 fs-lg-4">付款方式</p>
+                        <form>
+                            <div class="form-check py-3 ps-8 mb-0">
+                                <!-- 1 -->
+                                <div class="py-13">
+                                    <input class="form-check-input ms-0 mt-0 me-2" type="radio"
+                                        data-bs-toggle="collapse" data-bs-target="#credit" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class=" form-check-label " for="flexRadioDefault1">
+                                        信用卡一次付清
+                                        <img class="ms-4 img-sm" src="../assets/images/icons/Type=VISA.png" alt="">
+                                        <img class="img-sm" src="../assets/images/icons/Type=Mastercard.png" alt="">
+                                        <img class="img-sm" src="../assets/images/icons/Type=JCB.png" alt="">
+                                    </label>
+                                </div>
+                                <div class="ms-9 mb-13 bg-neutral-10 rounded-4 p-8 mt-n1 collapse" id="credit">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1 text-neutral-80"
+                                            class="form-label">信用卡卡號<span class="ms-1 text-error-100">*</span></label>
+                                        <input type="email" class="form-control p-3" id="exampleFormControlInput1"
+                                            placeholder="**** **** **** ****">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 pe-2 ">
+                                            <label for="exampleFormControlTextarea1"
+                                                class="form-label text-neutral-80">信用卡有限期限<span
+                                                    class="ms-1 text-error-100">*</span></label>
+                                            <input type="email" class="form-control p-3" id="exampleFormControlInput1"
+                                                placeholder="M M / YY">
+                                        </div>
+                                        <div class="col-6 ps-2 pb-3">
+                                            <label for="exampleFormControlTextarea1"
+                                                class="form-label text-neutral-80">卡片背面後三碼<span
+                                                    class="ms-1 text-error-100">*</span></label>
+                                            <input type="email" class="form-control p-3" id="exampleFormControlInput1"
+                                                placeholder="CVC / CVV">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="fs-9 text-neutral-80">本公司採用喬睿科技 TapPay
+                                                金流交易系統，消費者刷卡時直接在銀行端系統中交易，本公司不會留下您的信用卡資料，以保障你的權益，資料傳輸過程採用嚴密的 SSL 2048bit
+                                                加密技術保護。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="py-13">
+                                    <input class="form-check-input ms-0 mt-0 me-2" type="radio"
+                                        data-bs-toggle="collapse" data-bs-target="#credit-installment"
+                                        name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class=" form-check-label " for="flexRadioDefault1">
+                                        信用卡分期
+                                        <img class="img-sm ms-3" src="../assets/images/icons/Type=VISA.png" alt="">
+                                        <img class="img-sm" src="../assets/images/icons/Type=Mastercard.png" alt="">
+                                        <img class="img-sm" src="../assets/images/icons/Type=JCB.png" alt="">
+                                    </label>
+                                </div>
+                                <div class="ms-9 mb-13 bg-neutral-10 rounded-4 p-4 mt-n1 collapse"
+                                    id="credit-installment">
+                                    <p class="text-neutral-80 fs-6 mb-0 bg-neutral-10 ">
+                                        下一步將連至第三方金流服務進行辦卡，您所有的交易資訊皆獲得安全保護。</p>
+                                </div>
+                                <!-- 3 -->
+                                <div class="py-13">
+                                    <input class="form-check-input ms-0 mt-0 me-2" type="radio"
+                                        data-bs-toggle="collapse" data-bs-target="#line-pay" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class=" form-check-label " for="flexRadioDefault1">
+                                        LINE Pay
+                                        <img class="img-line ms-4" src="../assets/images/icons/LINE-Pay(h)_W238_n 2.png"
+                                            alt="">
+                                    </label>
+                                </div>
+                                <div class="ms-9 mb-13 bg-neutral-10 rounded-4 p-4 mt-n1 collapse" id="line-pay">
+                                    <p class="text-neutral-80 fs-6 mb-0 bg-neutral-10 ">使用 LINE Pay 付款，可用 LINE Points
+                                        折抵。您將被導入「LINE Pay」付款頁面進行安全結帳。</p>
+                                </div>
+                                <!-- 4 -->
+                                <div class="py-13">
+                                    <input class="form-check-input ms-0 mt-0 me-2" type="radio"
+                                        data-bs-toggle="collapse" data-bs-target="#Jiekou" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class=" form-check-label " for="flexRadioDefault1">
+                                        街口支付
+                                        <img class="img-Jiekou ms-4" src="../assets/images/icons/image 31.png" alt="">
+                                    </label>
+                                </div>
+                                <div class="ms-9 mb-13 bg-neutral-10 rounded-4 p-4 mt-n1 collapse" id="Jiekou">
+                                    <p class="text-neutral-80 fs-6 mb-0 bg-neutral-10 ">
+                                        可用街口幣折抵，街口支付全用戶不分等級，使用街利存帳戶付款享筆筆 2% 街口幣，回饋無上限！</p>
+                                </div>
+                                <!-- 5 -->
+                                <div class="py-13">
+                                    <input class="form-check-input ms-0 mt-0 me-2" type="radio"
+                                        data-bs-toggle="collapse" data-bs-target="#ATM" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class=" form-check-label " for="flexRadioDefault1">ATM 轉帳</label>
+                                </div>
+                                <div class="ms-9 mb-13 bg-neutral-10 rounded-4 p-4 mt-n1 collapse" id="ATM">
+                                    <p class="text-neutral-80 fs-6 mb-0 bg-neutral-10 ">下一步將連至第三方金流選擇銀行並取得繳費資訊</p>
+                                </div>
+                                <!-- 6 -->
+                                <div class="py-13">
+                                    <input class="form-check-input ms-0 mt-0 me-2" type="radio"
+                                        data-bs-toggle="collapse" data-bs-target="#shop" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class=" form-check-label " for="flexRadioDefault1">超商付款</label>
+                                </div>
+                                <div class="ms-9 mb-13 bg-neutral-10 rounded-4 p-4 mt-n1 collapse" id="shop">
+                                    <p class="text-neutral-80 fs-6 mb-0 bg-neutral-10 ">超商付款將加收 NT$30
+                                        手續費，若募資失敗手續費將不進行退款。</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="shadow mb-3 rounded-lg-4 mb-lg-18">
+                    <h2 class="text-neutral-100 fw-semibold fs-4 py-3 px-4 border-bottom mb-0 ">發票選項</h2>
+                    <div class="py-3 px-4">
+                        <button class="btn fw-semibold  btn-outline-blue-100 py-3 px-9 mb-4">帶入上次結帳資料</button>
+                        <form class="row">
+                            <div class="col-lg-6">
+                                <label for="exampleFormControlInput1" class=" text-neutral-80 form-label">姓名<span
+                                        class="ms-1 text-error-100">*</span></label>
+                                <input type="text" class="form-control p-3 mb-4" id="exampleFormControlInput1"
+                                    placeholder="請填寫真實姓名">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="exampleFormControlInput1" class="text-neutral-80 form-label">聯絡用電子信箱<span
+                                        class="ms-1 text-error-100">*</span></label>
+                                <input type="email" class="form-control p-3 mb-4" id="exampleFormControlInput1"
+                                    placeholder="請填寫電子信箱">
+                            </div>  
+                            <div class="section-1 row ps-lg-4 pe-0 ps-4">
+                                <div class="section col-lg-6 px-0 pe-lg-8">
+                                    <p class="text-neutral-80 ps-0 fs-6">發票類型<span class="ms-1 text-error-100">*</span></p>
+                                    <select class="form-select text-neutral-100 py-3 px-3" data-chose="electronic" onchange="this.dataset.chose = this.value;">
+                                        <option value="electronic" selected>電子發票</option>
+                                        <option value="compiled">統編發票</option>
+                                    </select>
+                                    <p class="ps-0 text-neutral-80 fs-8 mt-2 mb-4"><img class="img-sm-2 me-2" src="../assets/images/deco/flower-5.png" alt="">如需開立統編，請選擇統編發票</p>
+                                </div>
+
+                                <!-- 電子發票 -->
+                                <div class="col-lg-6 px-0 ps-lg-8  d-none section-2">
+                                    <p class="text-neutral-80 fs-6">領取方式<span class="ms-1 text-error-100">*</span></p>
+                                    <select class="form-select text-neutral-100 py-3 px-3" data-chose="vehicle" onchange="this.dataset.chose = this.value;">
+                                        <option value="1">存在 Learning 中，中獎寄信通知</option>
+                                        <option value="vehicle" selected>手機條碼載具</option>
+                                        <option value="3" selected>自然人憑證</option>
+                                    </select>
+                                </div>
+                                <!-- 載具 -->
+                                <div class="px-0 mt-4 d-none section-3">
+                                    <label for="vehicle" class="text-neutral-80 form-label">手機載具條碼</label>
+                                    <input type="text" class="form-control p-3 mb-4 w-100" id=" vehicle" placeholder="前面加上 / ，加上 7 個數字及大寫字母字元">
+                                </div>
+
+                                <!-- 統編發票 -->
+                               <div class="d-none section-4">
+                                    <div class="row">
+                                        <div class="col-lg-6 p-0 pe-lg-8">
+                                            <label for="Company" class="ps-lg-0 text-neutral-80 form-label">公司抬頭<span
+                                                    class="ms-1 text-error-100">*</span></label>
+                                            <input type="text" class="form-control p-3 mb-4 w-100" id="Company"
+                                                placeholder="請輸入公司抬頭">
+                                        </div>
+                                        <div class="col-lg-6  p-0 ps-lg-8">
+                                            <label for="Company-1" class="ps-lg-0 text-neutral-80 form-label">公司統編<span
+                                                    class="ms-1 text-error-100">*</span></label>
+                                            <input type="text" class="form-control p-3 mb-4 w-100" id="Company-1"
+                                                placeholder="請輸入公司統編">
+                                        </div>
+                                        <div class="col-lg-3  p-0 pe-lg-8">
+                                            <label for="Company-2" class="ps-lg-0 text-neutral-80 form-label">郵遞區號<span
+                                                    class="ms-1 text-error-100">*</span></label>
+                                            <input type="text" class="form-control p-3 mb-4 w-100" id="Company-2"
+                                                placeholder="請輸入郵遞區號">
+                                        </div>
+                                        <div class="col-lg-9  p-0 ps-lg-8">
+                                            <label for="Company-3" class="ps-lg-0 text-neutral-80 form-label">公司地址<span
+                                                    class="ms-1 text-error-100">*</span></label>
+                                            <input type="text" class="form-control p-3 mb-4 w-100" id="Company-3"
+                                                placeholder="請輸入公司地址">
+                                        </div>
+                                    </div>
+                               </div>  
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <div class="border-top py-8 px-3 d-flex align-items-center justify-content-between d-lg-none">
+                <div>
+                    <button type="button " class="bg-white text-neutral-80 fs-9 border-0" data-bs-toggle="modal"
+                        data-bs-target="#open">
+                        展開明細<img class="img-sm-2 mb-23"
+                            src="../assets/images/keyboard_arrow_up_24dp_4B4B4B_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                    </button>
+                    <p class="text-neutral-100 fw-semibold mt-1 fs-5 mb-0">NT$ 3,600</p>
+                </div>
+                <button type="button" class="btn btn-blue-100  py-3 px-9  fw-semibold" data-bs-toggle="modal" data-bs-target="#pay">
+                    同意並付款
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade p-0 " id="open" data-bs-backdrop="static" tabindex="-1" data-bs-keyboard="false"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered align-items-end mx-0 ">
+                    <div class="modal-content rounded-top-4 shadow  bg-white  pt-3 pb-8">
+                        <div class="d-flex align-items-center justify-content-between px-3 pb-3 border-bottom">
+                            <h2 class="fs-8 text-neutral-100 fw-semibold mb-0">訂單明細</h2>
+                            <button type="button" class="btn-close img-sm py-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="py-4 px-3 ">
+                            <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+                                <p class="fs-8 text-neutral-80 mb-0 ">2 項課程小計</p>
+                                <p class="fs-8 text-neutral-80 mb-0 fw-semibold">NT$ 3600</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-end">
+                                <p class="mb-0  fs-8 text-neutral-80">總計</p>
+                                <p class="mb-0 fw-semibold fs-5 pb-4 text-neutral-100">NT$ 3,600</p>
+                            </div>
+                            <p class="fs-8 text-neutral-80 mb-0">確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。</p>
+                        </div>
+                        <div class="border-top py-8 px-3 d-flex align-items-center justify-content-between d-lg-none">
+                            <div>
+                                <button type="button " class="bg-white text-neutral-80 fs-9 border-0" data-bs-dismiss="modal">
+                                    收合明細<img class="img-sm-2 mb-23"
+                                        src="../assets/images/keyboard_arrow_up_24dp_4B4B4B_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                                </button>
+                                <p class="text-neutral-100 fw-semibold mt-1 fs-5 mb-0">NT$ 3,600</p>
+                            </div>
+                            <button type="button" class="btn btn-blue-100  py-3 px-9  fw-semibold" data-bs-toggle="modal" data-bs-target="#pay">
+                                同意並付款
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PC -->
+            <div class="col-lg-4 h-100 d-none d-lg-block">
+                <div class="rounded-4 shadow  p-4">
+                    <h2 class="fs-4 text-neutral-100 fw-semibold mb-9">訂單明細</h2>
+                    <div class="d-flex align-items-center justify-content-between pb-9 border-bottom mb-9">
+                        <p class="fs-6 text-neutral-80 mb-0 ">2 項課程小計</p>
+                        <p class="fs-6 text-neutral-80 mb-0 fw-semibold">NT$ 3600</p>
+                    </div>
+                    <div class="d-flex justify-content-between mb-9 align-items-end">
+                        <p class="mb-0  fs-6 text-neutral-80">總計</p>
+                        <p class="mb-0 fw-semibold fs-2 text-neutral-100">NT$ 3,600</p>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="w-100 btn btn-blue-100 py-3 mb-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#pay">
+                        同意並付款
+                    </button>
+                    <p class="fs-8 text-neutral-80 mb-0">確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+
+
+    
+    <!-- Modal -->
+    <div class="modal fade bg-filter" id="pay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog w-440 modal-dialog-centered">
+            <a class="modal-content rounded-6" href="finish.html">
+                <div class="modal-body p-0 ">
+                    <div class="d-flex align-items-center flex-column">
+                        <div class="mb-lg-21 mb-6 mt-5  mt-lg-10">
+                            <div class="spinner-grow img-smsm img-smsm-8 me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-neutral-80 img-smsm img-smsm-8 me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-neutral-60 img-smsm img-smsm-8" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <img class="img-logo mb-3 " src="../assets/images/logo.png" alt="">
+                        <p class="fw-semibold fs-lg-5 fs-6 text-neutral-100 mb-4 mb-lg-10">正在處理您的訂單</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

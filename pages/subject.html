@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning-線上課程網站</title>
+</head>
+
+<body>
+    <main class=" position-fixed top-0 start-50 translate-middle-x w-100 z-top bg-white">
+        <%- include('./layout/nav-login'); -%>
+    </main>
+
+    <main class="mb-6 py-lg-10 mb-lg-0 mt-27 mt-lg-20 pt-6">
+        <article class="container">
+            <div class="d-lg-flex justify-content-between align-items-center">
+                <div class=" d-flex align-items-center mb-4 mb-lg-0">
+                    <img class="img-subject me-2" src="../assets/images/avatar-1.png" alt="">
+                    <div>
+                        <h1 class="fs-2 fw-semibold text-neutral-100 mb-0 mb-lg-3">Jessica</h1>
+                        <div class="d-none d-lg-flex">
+                            <p class="position-relative hover-blue-10 text-neutral-60 fw-semibold hover-user mb-0 rounded-5 fs-8 py-2 px-8 me-2">
+                                <img class="img-project me-2" src="../assets/images/icons/folder_24dp_0068FF_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                                <img class="img-project position-absolute top-0 start-0 me-2 mt-2 ms-8"
+                                    src="../assets/images/icons/folder_24dp_909090_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                                我的課程
+                            </p>
+                            <p class="position-relative hover-blue-10 text-neutral-60 fw-semibold hover-user mb-0 rounded-5 fs-8 py-2 px-8 me-2">
+                                <img class="img-project me-2" src="../assets/images/icons/bookmark_24dp_0068FF_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                                <img class="img-project position-absolute top-0 start-0 me-2 mt-2 ms-8"
+                                    src="../assets/images/icons/bookmark_24dp_909090_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                                我的收藏
+                            </p>
+                            <p class="position-relative hover-blue-10 text-neutral-60 fw-semibold hover-user mb-0 rounded-5 fs-8 py-2 px-8 me-2">
+                                <img class="img-project " src="../assets/images/icons/edit_24dp_0068FF_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                                <img class="img-project position-absolute top-0 start-0 me-2 mt-2 ms-8"
+                                    src="../assets/images/icons/edit_24dp_909090_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                                作品成果
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex mb-9 d-lg-none">
+                    <p class="position-relative hover-blue-10 text-neutral-60 fw-semibold hover-user mb-0 rounded-5 fs-8 py-2 px-8 me-2">
+                        <img class="img-sm-992 me-2" src="../assets/images/icons/folder_24dp_0068FF_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                        <img class="img-sm-992 position-absolute top-0 start-0 me-2 mt-2 ms-8" src="../assets/images/icons/folder_24dp_909090_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                        我的課程
+                    </p>
+                    <p class="position-relative hover-blue-10 text-neutral-60 fw-semibold hover-user mb-0 rounded-5 fs-8 py-2 px-8 me-2">
+                        <img class="img-sm-992 me-2" src="../assets/images/icons/bookmark_24dp_0068FF_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                        <img class="img-sm-992 position-absolute top-0 start-0 me-2 mt-2 ms-8" src="../assets/images/icons/bookmark_24dp_909090_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                        我的收藏
+                    </p>
+                    <p class="position-relative hover-blue-10 text-neutral-60 fw-semibold hover-user mb-0 rounded-5 fs-8 py-2 px-8 me-2">
+                        <img class="img-sm-992 " src="../assets/images/icons/edit_24dp_0068FF_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                        <img class="img-sm-992 position-absolute top-0 start-0 me-2 mt-2 ms-8" src="../assets/images/icons/edit_24dp_909090_FILL1_wght300_GRAD0_opsz24.png" alt="">
+                        作品成果
+                    </p>
+                </div>
+                <div class="d-flex justify-content-between justify-content-lg-start">
+                    <div class="text-center px-4 px-lg-0 me-lg-6">
+                        <p class="fs-8 text-neutral-80 mb-1">我的課程</p>
+                        <p class="fs-7 mb-0 fw-semibold text-neutral-100">4</p>
+                    </div>
+                    <div class="text-center px-4 px-lg-0 me-lg-6">
+                        <p class="fs-8 text-neutral-80 mb-1">我的收藏</p>
+                        <p class="fs-7 mb-0 fw-semibold text-neutral-100">2</p>
+                    </div>
+                    <div class="text-center px-4 px-lg-0">
+                        <p class="fs-8 text-neutral-80 mb-1">作品成果</p>
+                        <p class="fs-7 mb-0 fw-semibold text-neutral-100">5</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <main class="container mb-16 pb-lg-6 pt-lg-6 pt-4">
+        <div class="d-flex mb-6 align-items-center justify-content-between  justify-content-lg-start">
+            <div class="me-13 me-lg-9">
+                <p class="fs-6 mb-0 pt-3 pb-8  fw-semibold text-blue-100">所有課程 (4)</p>
+                <div class="box-blue-100"></div>
+            </div>
+            <p class="fs-6 mb-0 py-3 me-lg-9 me-13 text-neutral-80">正在上課中</p>
+            <p class="fs-6 mb-0 py-3 me-lg-9 me-13 text-neutral-80">等待開課</p>
+            <p class="fs-6 mb-0 py-3 text-neutral-80">已完課</p>
+        </div>
+        <%- include('./layout/swiper-card'); -%>
+    </main>
+    <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

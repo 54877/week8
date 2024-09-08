@@ -1,0 +1,74 @@
+.btn-white:hover{
+    background-color: $blue-100 !important;
+    color: $white !important;
+   
+}
+.btn-login{
+
+    border: 1px solid $neutral-40;
+    
+}
+
+
+.ro:focus>.ro-2>img{
+    transform: rotate(90deg);
+}
+.ro:focus{
+    border-radius: 16px 16px 0 0 !important;
+}
+
+.hover-neutral-40.hover-neutral-40.hover-neutral-40.hover-neutral-40:hover{
+    background-color: #ECECEC !important;
+    color: #909090;
+}
+.hover-blue-100.hover-blue-100.hover-blue-100.hover-blue-100:hover{
+    background-color: $blue-100 !important;
+    color: white !important;
+}
+
+.hover-blue-10:hover {
+    background-color: $blue-10;
+    color: $blue-100 !important;
+}
+
+.hover-white:hover{
+    background-color: #ffff !important;
+    color: #4B4B4B !important;
+}
+
+.hover-outline-blue-100:hover{
+    color: $blue-100 !important;
+    border: 1px solid $blue-100 !important;
+}
+
+  .hover-user:hover{
+    img:last-child{
+       opacity: 0 !important; 
+    }
+  }
+     
+.hover-nav:hover{
+    color: $blue-100 !important;
+    position: relative;
+    &::before{
+        content: "";
+        width: 32px;
+        height: 4px;
+        background: $blue-100;
+        border-radius: 10px;
+        position: absolute;
+        transform: translate(50%);
+        bottom: 0 !important;
+        right: 50% !important;
+    }
+}
+
+
+.btn-login:hover{
+    background-color: $blue-100 !important;
+    color: #ffff !important;
+}
+
+.focus-white:focus{
+    background-color: white !important;
+}

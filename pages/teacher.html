@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning-線上課程網站</title>
+</head>
+<style>
+    
+    .bgi-teacher-sm{
+        background-image: url(../assets/images/hero-sm-5.png);
+        max-width: 992px;  
+        width: 100%;    
+        height: 200px; 
+        
+    }
+    .bgi-teacher{
+        background-image: url(../assets/images/hero-5.png);       
+        max-width: 1920px;
+        height: 400px;
+        width: 100%;
+        
+    }
+</style>
+<body>
+    <main class=" position-fixed top-0 start-50 translate-middle-x w-100 z-top bg-white">
+        <%- include('./layout/nav-login'); -%>
+        
+    </main>
+    <main class="container-login mt-lg-29 d-none d-lg-block">
+        <article class="bgi bgi-teacher position-relative">
+        </article>
+    </main>
+    
+    <main class="container mt-27 d-lg-none">
+        <article class="bgi-teacher-sm bgi position-relative">
+            <img class="img-fluid position-absolute bg-white bottom-0 start-50 translate-middle-x--y p-7 rounded-circle " src="../assets/images/icons/ic_ hexschool.png" alt="">            
+        </article>
+    </main>
+    <main class="container">
+        <article class="row pt-lg-10 pt-27 position-relative">
+            <div class="col-lg-3">
+                <img class="img-teacher bg-white p-13 d-none d-lg-block rounded-circle  position-absolute top-0 start-0 translate-middle-y"
+                    src="../assets/images/icons/ic_ hexschool.png" alt="">
+            </div>
+            <div class="col-lg-9 ps-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                <h1 class="fs-lg-7 fs-2 text-neutral-100 fw-semibold mb-lg-4 mb-3 ">六角學院</h1>
+                <div class="d-flex mb-lg-4 mb-3">
+                    <p class="text-neutral-80 mb-0 fs-lg-6 fs-8 pe-4 border-end"><span class=" text-blue-100 me-1 fs-6 fs-lg-5 fw-semibold">4</span>堂課</p>
+                    <p class="text-neutral-80 mb-0 fs-lg-6 fs-8 pe-lg-4 pe-8 border-end"><span class="ps-8 ps-lg-4 text-blue-100 me-1 fs-6 fs-lg-5 fw-semibold">8463</span>收藏數</p>
+                    <p class="text-neutral-80 mb-0 fs-lg-6 fs-8 "><span class="ps-8 ps-lg-4 text-blue-100 me-1 fs-6 fs-lg-5 fw-semibold">20,218</span>個學生</p>
+                </div>
+                <p class="mb-3 fs-8 text-neutral-80 fs-lg-6 mb-lg-4">六角學院 是一所線上程式開發學習單位，目前已累積 20,000 名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。
+                <br>我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。</p>
+                <div class="d-flex align-items-center justufy-content-center">
+                    <img class="out-1 me-3 img-subject-logo rounded-circle py-8 px-30" src="../assets/images/Line-Symbol.png" alt="">
+                    <img class="out-1 me-3 img-subject-logo rounded-circle py-8 px-7" src="../assets/images/1112-youtube_black_icon.png" alt="">
+                    <img class="out-1 img-subject-logo rounded-circle py-8 px-3" src="../assets/images/FB_icon-icons.webp" alt="">
+                </div>
+            </div>
+           
+        </article>
+    </main>
+    
+    <main class="container mb-11 mb-lg-10 pb-lg-11 pt-5 pt-lg-16">
+        <div class="d-flex mb-4 align-items-center text-neutral-100 fw-semibold fs-5 fs-lg-4">
+            <img class="img-sm me-2" src="../assets/images/deco/flower-5.png" alt="">
+            更多程式學習相關課程
+        </div>
+        <%- include('./layout/swiper-card'); -%>
+    </main>
+    <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
